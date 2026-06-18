@@ -55,7 +55,7 @@ utime.sleep(1)
  
 while True:
   ds_sensor.convert_temp()
-  time.sleep_ms(750)
+  time.sleep_ms(500)
   for rom in roms:
     display.set_pen(WHITE)                      # Set a green pen
     display.clear()                                 # Fill the screen in green
