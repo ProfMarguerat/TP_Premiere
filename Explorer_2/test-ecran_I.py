@@ -10,6 +10,13 @@ picoexplorer.clear()                                 # Fill the screen in red
 picoexplorer.set_pen(255, 255, 255)                  # Set a white pen
 picoexplorer.text("pico explorer", 10, 10, 240, 5)   # Add some text
 picoexplorer.update()                                # Update the display with our changes
+utime.sleep(0.5)
+
+picoexplorer.set_pen(255, 0, 0)                      # Set a red pen
+picoexplorer.clear()                                 # Fill the screen in red
+picoexplorer.set_pen(255, 255, 255)                  # Set a white pen
+picoexplorer.text("Appuyer sur A", 10, 10, 240, 3)   # Add some text
+picoexplorer.update() 
 
 while picoexplorer.is_pressed(picoexplorer.BUTTON_A) == True:
 #    pass
@@ -22,5 +29,6 @@ while picoexplorer.is_pressed(picoexplorer.BUTTON_A) == True:
 picoexplorer.set_pen(255, 0, 0)                      # Set a red pen
 picoexplorer.clear()                                 # Fill the screen in red
 picoexplorer.set_pen(255, 255, 255)                  # Set a white pen
-picoexplorer.text("Bonjour !", 10, 10, 240, 3)   # Add some text
+picoexplorer.text("Appuyer sur A", 10, 10, 240, 3)   # Add some text
 picoexplorer.update()                                # Update the display with our changes
+
